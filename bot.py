@@ -15,7 +15,7 @@ item4 = types.InlineKeyboardButton('🏥 Поликлиника', callback_data=
 item5 = types.InlineKeyboardButton('👮🏻‍♂️Участковый', callback_data='precinct')
 item6 = types.InlineKeyboardButton('Телеком', callback_data='telecom')
 
-keyboard2.add(item1, item2, item3, item4, item5)
+keyboard2.add(item1, item2, item3, item4, item5, item6)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
