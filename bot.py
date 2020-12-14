@@ -13,7 +13,7 @@ item2 = types.InlineKeyboardButton('👮🏿‍♂️Охранник', callback
 item3 = types.InlineKeyboardButton('👩🏻‍💼 Менеджер', callback_data='manager')
 item4 = types.InlineKeyboardButton('🏥 Поликлиника', callback_data='hospital')
 item5 = types.InlineKeyboardButton('👮🏻‍♂️Участковый', callback_data='precinct')
-item6 = types.InlineKeyboardButton('Телеком', callback_data='telecom')
+item6 = types.InlineKeyboardButton('📞 Телеком', callback_data='telecom')
 
 keyboard2.add(item1, item2, item3, item4, item5, item6)
 
