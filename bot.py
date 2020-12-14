@@ -13,6 +13,7 @@ item2 = types.InlineKeyboardButton('👮🏿‍♂️Охранник', callback
 item3 = types.InlineKeyboardButton('👩🏻‍💼 Менеджер', callback_data='manager')
 item4 = types.InlineKeyboardButton('🏥 Поликлиника', callback_data='hospital')
 item5 = types.InlineKeyboardButton('👮🏻‍♂️Участковый', callback_data='precinct')
+item6 = types.InlineKeyboardButton('Телеком', callback_data='telecom')
 
 keyboard2.add(item1, item2, item3, item4, item5)
 
@@ -40,6 +41,9 @@ def callback_inline(call):
             elif call.data == 'precinct':
                 bot.send_message(call.from_user.id,'Участковый инспектор полиции 👮🏻‍♂️\nКарабалаев Сабырхан Мамырханулы:\n'
                                                        '+7 (776) 177 4040\n')
+            elif call.data == 'telecom':
+                bot.send_message(call.from_user.id,'Нурсултан "Телеком"\n+7 (775) 710 13 75')
+
     except Exception as e:
         print(repr(e))
 
